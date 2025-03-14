@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import ShopItemFunc from './components/ShopItemFunc'
-import item from './components/Item'
+import Item from './components/Item'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="container">
       <div className="background-element">
@@ -16,7 +11,7 @@ function App() {
         <div className='highlight-overlay'></div>
       </div>
       <div className="window">
-        <ShopItemFunc item={item} />
+        <ShopItemFunc item={Item} />
       </div>
     </div>
   )
